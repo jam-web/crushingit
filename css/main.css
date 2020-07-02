@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ==========================================================================
+/*****BASESTYLES*****/
+
+html, body {
+    font-family: 'Montserrat Regular', 'Montserrat Bold' 'Source Sans Pro Semibold' sans-serif, monospace;
+    height: auto;
+    margin: 0;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+/****** GRID ******/
+
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+}
+.half-width {
+    width: 50%;
+    float: left;
+}
+.third-width {
+    width: 33%;
+    float: left;
+}
+/****HEADER*****/
+
+header {
+    background-color: #1f202b
+    background-size: cover;
+    background-image: url(../img/hero-background.png);
+    color: #ffffff;
+    height:  800px;
+}
+
+header h1 {
+    float: left;
+    font-family: 'Montserrat regular', sans-serif;
+    font-size: 24px;
+}
+
+header nav {
+    margin: 10px;
+}
+
+header nav ul {
+    clear: both;
+    margin: 0;
+    padding: 0 150px 0 0;
+}
+
+header nav ul li{
+    display: inline;
+    font-size: 24px;
+    margin: 10px;
+    font-weight: 700;
+    overflow: auto;
+    
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-family: 'Source Code Pro Semibold', monospace;
+    list-style-type: none;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    border-radius: 5px;
+    color: #fa0075;
+}
+
+header h2 {
+    color: #ffffff;
+    float: left;
+    font-family: 'Source Code Pro Semibold', monospace;
+    font-size: 72pt;
+    padding-left: 0px;
+    padding-top: 75px;  
+    text-align: left;
+}
+
+header h2 span {
+    color: #fa0075;
+}
+
+/*****Portfolio*****/
+#portfolio {
+    background-color: #1f202b;
+    color: #ffffff;
+    margin: 15px;
+    overflow: auto;
+}
+
+#portfolio h2 {
+    color: #fa0075;
+    font-family: 'Source Code Pro Semibold', monospace;
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 40px;
+    text-align: center;
+}ß
+
+#portfolio h3 {
+    color: #ffffff;
+    font-family: "Montserrat regular", monospace;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-left: 30px;
+}
+
+#portfolio p {
+    color:  #ffffff;
+    font-family: "Montserrat regular", monospace;
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 30px;
+    padding-bottom: 75px;
+}
+
+#portfolio img {
+    margin: 30px;
+    padding-bottom: 100px;
+}
+
+#portfolio .column-1 {
+    float: left;
+    width: 45%;
+} 
+
+#portfolio .column-2 {
+    float: right;
+    margin: 15px;
+    width: 45%;
+}
+
+#portfolio .row-1, .row-2, .row-3 {
+    color: #ffffff;
+    height:  500px;
+    padding: 100px;
+    text-align: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*****ABOUT*****/
+  #about {
+    background-image: url("../img/keyboard.png");
+    background-color: #d3d3d3;
+    background-size: cover;
+    height: 600px;
+  }
+
+  #about h2 {
+      color: #fa0075;
+      font-family: 'Source Code Pro Semibold', monospace;
+      font-size: 36px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-top: 40px;
+      text-align: center;
+  }
+
+  #about h5, p {
+        color: #1f202b;  
+        font-family: 'Montserrat bold', sans-serif;
+        font-size: 22px;
+        padding: 0px;
+        text-align: left;
+  }
+
+  #about img {
+    border-radius: 50%;
+  }
+
+  /*****CONTACT*****/
+
+  #contact {
+    background-color: #1f202b;
+    margin: 0 auto;
+    }
+
+  #contact .full-width {
+    height: 400px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+  #contact h6 {
+    color: #fa0075;
+    font-family: 'Source Code Pro Semibold', monospace;
+    font-size: 36px;
+    margin: 0px 1px 0px 1px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+  .third-width  {
+    width: 400px;
+}
+
+  .third-width h6 {
+    color: white;
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+  .third-width p {
+    color: white;
+    font-family: 'Montserrat Regular', sans-serif;
+    font-size: 20px; 
+    text-align: center;
+}
+
+.third-width a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.third-width a:hover {
+    border-radius: 5px;
+    color: #fa0075;
+}
+
+.third-width ul {
+    display: inline;
+    list-style: none;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+.third-width ul li a {
+    float: left;
+    padding: 30px 10px 10px 50px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
