@@ -1,5 +1,5 @@
 # crushingit
-Third portfolio project
+Portfolio project
 
 Crushingit is a website design taught in the Skillcrush HTML/CSS/Github curriculum. My finished project is included in this repository.
 
